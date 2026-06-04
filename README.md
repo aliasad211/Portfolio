@@ -28,7 +28,7 @@ It is built with **Next.js** to ensure fast performance, SEO optimization, and a
 - Tailwind CSS
 
 ---
-📂 Project Structure
+## 📂 Tech Stack
 My-PORTFOLIO/
 │
 ├── components/
@@ -37,33 +37,42 @@ My-PORTFOLIO/
 ├── styles/
 ├── package.json
 └── README.md
-🚀 Getting Started
+
+---
+## 🚀 Getting Started
 Clone the Repository
 git clone https://github.com/aliasad211/portfolio.git
 Open the Project
 Download or clone the repository.
 Open the project folder.
 
-🎯 Purpose
+---
+## 🎯 Purpose
 The purpose of this project is to build a strong personal brand and showcase my web development skills using modern technologies like Next.js.
 
-🔮 Future Improvements
+---
+## 🔮 Future Improvements
 Blog section
 Dark/Light mode toggle
 Advanced animations
 Backend integration for contact form
 Improved SEO optimization
-🤝 Contributing
+
+---
+## 🤝 Contributing
 Contributions, suggestions, and improvements are welcome.
 
 Fork the repository
 Create a new branch
 Make your changes
 Submit a pull request
-📄 License
+
+---
+## 📄 License
 This project is created for showcasing my skills and learn new skills.
 
-👨‍💻 Author
+---
+## 👨‍💻 Author
 Muhammad Ali Asad
 
 GitHub: https://github.com/aliasad211
