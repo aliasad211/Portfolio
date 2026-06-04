@@ -4,6 +4,16 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+/* Chrome, Safari, aur Opera ke liye scrollbar hatane ka tareeqa */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox aur IE/Edge ke liye scrollbar hatane ka tareeqa */
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -23,4 +33,208 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* src/app/globals.css ke end main yeh add karen */
+
+.profile-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    max-width: 85vw;
+    max-height: 85vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    .profile-container {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+.profile-container::before {
+    content: '';
+    position: absolute;
+    inset: -5px 80px;
+    background: linear-gradient(360deg, #00a6fb, #d400d4);
+    transition: 0.5s;
+    animation: imaage 4s linear infinite;
+}
+
+.profile-container:hover::before {
+    inset: -10px;
+}
+
+@keyframes imaage {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.profile-container::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #0f172a; /* Slate-900 matches the theme perfectly */
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.innerdiv {
+    position: absolute;
+    inset: 12px; 
+    border: 3px solid #020617; /* Slate-950 boundary */
+    z-index: 10;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.innerdiv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.profile-container:hover .innerdiv img {
+    opacity: 0;
+}
+
+.innerdiv h3 {
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.innerdiv a {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #070a1c;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.innerdiv a:hover {
+    letter-spacing: 0.15em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 640px) {
+    .innerdiv h3 {
+        font-size: 1.1em;
+    }
+    .innerdiv a {
+        font-size: 0.85em;
+        padding: 6px 14px;
+        margin-top: 6px;
+    }
+}
+
+/* 
+logo content */
+
+.logocontent {
+    position: relative;
+}
+
+.logocontent h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-style: italic;
+}
+
+.logocontent h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #00a6fb;
+}
+
+.logocontent h1:nth-child(2) {
+    color: #00a6fb;
+    animation: animate 3s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0 100%);
+    }
+    50% {
+        clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0 100%);
+    }
+}
+
+/* Custom ambient background orbs */
+.bg-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(130px);
+    opacity: 0.18;
+    z-index: 0;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+.orb-blue {
+    width: min(550px, 95vw);
+    height: min(550px, 95vw);
+    background: radial-gradient(circle, #00a6fb 0%, rgba(0, 166, 251, 0) 70%);
+    animation: floatOrbOne 28s infinite alternate ease-in-out;
+}
+
+.orb-purple {
+    width: min(650px, 98vw);
+    height: min(650px, 98vw);
+    background: radial-gradient(circle, #d400d4 0%, rgba(212, 0, 212, 0) 70%);
+    animation: floatOrbTwo 34s infinite alternate ease-in-out;
+}
+
+@keyframes floatOrbOne {
+    0% {
+        transform: translate(-10%, 10%) scale(1);
+    }
+    50% {
+        transform: translate(25%, 35%) scale(1.15);
+    }
+    100% {
+        transform: translate(5%, -10%) scale(0.9);
+    }
+}
+
+@keyframes floatOrbTwo {
+    0% {
+        transform: translate(15%, 50%) scale(1.1);
+    }
+    50% {
+        transform: translate(-15%, 15%) scale(0.88);
+    }
+    100% {
+        transform: translate(25%, -15%) scale(1.12);
+    }
 }
