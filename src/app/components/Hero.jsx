@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-
+import { useState, useEffect } from "react";
 import {
   FaFacebookF,
   FaTwitter,
@@ -12,6 +12,40 @@ import {
 } from 'react-icons/fa';
 
 export default function Hero() {
+
+  const text = "MERN Developer";
+  const [currentText, setCurrentText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    let timer;
+    // Typing speed, Deleting speed, aur Rukne ka time set karne ke liye
+    const typingSpeed = isDeleting ? 50 : 150; 
+
+    if (!isDeleting && index < text.length) {
+      // Ek-ek karke letter add karna
+      timer = setTimeout(() => {
+        setCurrentText((prev) => prev + text[index]);
+        setIndex((prev) => prev + 1);
+      }, typingSpeed);
+    } else if (isDeleting && index > 0) {
+      // Ek-ek karke letter delete karna
+      timer = setTimeout(() => {
+        setCurrentText((prev) => prev.slice(0, -1));
+        setIndex((prev) => prev - 1);
+      }, typingSpeed);
+    } else if (index === text.length && !isDeleting) {
+      // Poora word type hone ke baad 1.5 second tak rukna
+      timer = setTimeout(() => setIsDeleting(true), 1500);
+    } else if (index === 0 && isDeleting) {
+      // Poora delete hone ke baad dobara shuru karna
+      setIsDeleting(false);
+    }
+
+    return () => clearTimeout(timer);
+  }, [index, isDeleting]);
+
   return (
     <section
       id="home"
@@ -26,9 +60,18 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center md:text-left space-y-6 order-2 md:order-1"
         >
-          <h1 className="font-['Playfair_Display',serif] font-semibold text-[clamp(44px,7vw,50px)] leading-tight">
+          {/* <h1 className="font-['Playfair_Display',serif] font-semibold text-[clamp(44px,7vw,50px)] leading-tight">
             I’m a <span className="text-[#00a6fb] italic">MERN Developer</span>
-          </h1>
+          </h1> */}
+
+       <h1 className="font-['Playfair_Display',serif] font-semibold text-[clamp(44px,7vw,50px)] leading-tight text-white">
+      I’m a{" "}
+      <span className="text-[#00a6fb] italic inline-block relative">
+        {currentText}
+        {/* Blinking Cursor Effect */}
+        <span className="ml-1 inline-block w-0.75 h-[0.9em] bg-white animate-pulse absolute bottom-1"></span>
+      </span>
+    </h1>
 
           <p className="text-xl sm:text-2xl font-medium text-white">
             Full Stack Web & Mobile Application Developer
