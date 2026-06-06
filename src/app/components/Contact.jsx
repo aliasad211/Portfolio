@@ -16,19 +16,19 @@ const contactDetails = [
   {
     icon: <FaEnvelope />,
     label: "Email",
-    value: "hammadalimughal08@gmail.com",
-    href: "mailto:hammadalimughal08@gmail.com",
+    value: "info.aliasad785@gmail.com",
+    href: "mailto:info.aliasad785@gmail.com",
   },
   {
     icon: <FaPhone />,
     label: "Phone",
-    value: "+923231005422",
-    href: "tel:+923231005422",
+    value: "+923121355785",
+    href: "tel:+923121355785",
   },
   {
     icon: <FaMapMarkerAlt />,
     label: "Location",
-    value: "Chakwal, Pakistan",
+    value: "Islamabad, Pakistan",
     href: null,
   },
 ];
@@ -108,7 +108,7 @@ export default function Contact() {
             <ul className="space-y-5">
               {contactDetails.map((item, i) => (
                 <li key={i} className="flex items-center gap-4">
-                  <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#00a6fb] to-[#d400d4] flex items-center justify-center text-white text-base flex-shrink-0 shadow-md shadow-[#00a6fb]/20">
+                  <div className="w-11 h-11 rounded-full bg-[#00a6fb] flex items-center justify-center text-white text-base flex-shrink-0 shadow-md shadow-[#00a6fb]/20">
                     {item.icon}
                   </div>
                   <div>
@@ -218,7 +218,7 @@ export default function Contact() {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full py-3.5 rounded-xl font-semibold text-white flex items-center justify-center gap-3 bg-gradient-to-r from-[#00a6fb] to-[#d400d4] hover:opacity-90 transition-opacity duration-300 shadow-lg shadow-[#00a6fb]/20 text-sm"
+                className="w-full py-3.5 rounded-xl font-semibold text-white flex items-center justify-center gap-3 bg-[#00a6fb] hover:opacity-90 transition-opacity duration-300 shadow-lg shadow-[#00a6fb]/20 text-sm"
               >
                 <FaPaperPlane size={14} /> Send Message
               </motion.button>
