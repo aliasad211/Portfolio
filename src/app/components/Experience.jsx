@@ -7,10 +7,24 @@ export default function Experience() {
   const journey = [
     {
       type: "work",
-      title: "Freelance Full Stack Developer",
-      subtitle: "Self-Employed",
-      date: "2024 - Present",
-      location: "Remote",
+      title: "Full Stack Developer",
+      subtitle: "AlfaOrigin",
+      date: "jan 2025 - june 2025",
+      location: "Onsite",
+      points: [
+        "Delivered 10+ client projects including e-commerce, portfolios, and dashboards",
+        "Built scalable MERN stack applications with responsive UI and REST APIs",
+        "Collaborated with international clients on Upwork and Fiverr with 5-star ratings",
+        "Integrated payment gateways, authentication, and third-party APIs for real-world apps",
+      ],
+      icon: <FaBriefcase />,
+    },
+    {
+      type: "work",
+      title: "Full Stack Developer",
+      subtitle: "Marifahsol",
+      date: "Aug 2025 - Present",
+      location: "Onsite",
       points: [
         "Delivered 10+ client projects including e-commerce, portfolios, and dashboards",
         "Built scalable MERN stack applications with responsive UI and REST APIs",
@@ -21,15 +35,15 @@ export default function Experience() {
     },
     {
       type: "education",
-      title: "Bachelor of Computer Science",
-      subtitle: "Comsats University Islamabad Wah Cantt",
-      date: "2022 - 2026",
-      location: "Wah Cantt, Pakistan",
+      title: "Bachelor in Software Engineering",
+      subtitle: "University of Mianwali",
+      date: "2021 - 2025",
+      location: "Islamabad, Pakistan",
       points: [
-        "Graduated with a Bachelor Degree in Computer Science",
+        "Graduated with a Bachelor Degree in Software Engineering",
         "Specialized in Software Engineering and Web Development",
-        "Led university coding bootcamp for 2 years",
-        "Built several projects including a student portal system",
+        "Participated in coding competitions, improving problem-solving and programming skills.",
+        "Built several projects including a HerbLens with AI integration",
       ],
       icon: <FaGraduationCap />,
     },
@@ -71,116 +85,95 @@ export default function Experience() {
           <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[3px] bg-gradient-to-b from-[#00a6fb] to-[#d400d4] opacity-50 z-0" />
 
           {/* Cards Mapping */}
-          <div className="space-y-12">
-            {journey.map((item, index) => {
-              const isEven = index % 2 === 0;
+          {/* Cards Mapping */}
+<div className="space-y-12">
+  {journey.map((item, index) => {
+    const isEven = index % 2 === 0;
 
-              return (
-                <div
-                  key={index}
-                  className="flex flex-col md:flex-row items-stretch relative z-10 w-full"
-                >
-                  {/* Badge Icon in the center */}
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    transition={{ type: "spring", stiffness: 150, delay: 0.15 }}
-                    viewport={{ once: true }}
-                    whileHover={{ scale: 1.15 }}
-                    className="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-2 w-9 h-9 rounded-full bg-slate-900 border-2 border-[#00a6fb] flex items-center justify-center text-white text-base shadow-lg shadow-[#00a6fb]/20 cursor-default"
-                  >
-                    <span className="text-[#00a6fb]">
-                      {item.icon}
-                    </span>
-                  </motion.div>
+    const Card = () => (
+      <motion.div
+        initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        whileHover={{ y: -4 }}
+        className="w-full text-left bg-gradient-to-br from-white/10 to-transparent border border-white/15 p-6 rounded-2xl backdrop-blur-md shadow-xl hover:border-[#00a6fb]/45 transition-all duration-300"
+      >
+        <h3 className="text-xl font-bold text-white mb-1">
+          {item.title}
+        </h3>
 
-                  {/* Left Side Container (Blank on Odd indexes in desktop) */}
-                  <div className="w-full md:w-1/2 pr-0 md:pr-12 pl-12 md:pl-0 flex justify-end items-center order-2 md:order-1">
-                    {isEven && (
-                      <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
-                        whileHover={{ y: -4 }}
-                        className="w-full text-left bg-gradient-to-br from-white/10 to-transparent border border-white/15 p-6 rounded-2xl backdrop-blur-md shadow-xl hover:border-[#00a6fb]/45 transition-all duration-300"
-                      >
-                        <h3 className="text-xl font-bold text-white mb-1">
-                          {item.title}
-                        </h3>
-                        <span className="text-sm font-semibold text-[#00a6fb] block mb-3">
-                          {item.subtitle}
-                        </span>
+        <span className="text-sm font-semibold text-[#00a6fb] block mb-3">
+          {item.subtitle}
+        </span>
 
-                        <div className="flex flex-wrap gap-4 text-xs text-slate-400 mb-4 font-medium">
-                          <span className="flex items-center gap-1.5">
-                            <FaCalendarAlt className="text-[#00a6fb]" /> {item.date}
-                          </span>
-                          <span className="flex items-center gap-1.5">
-                            <FaMapMarkerAlt className="text-[#00a6fb]" /> {item.location}
-                          </span>
-                        </div>
+        <div className="flex flex-wrap gap-4 text-xs text-slate-400 mb-4 font-medium">
+          <span className="flex items-center gap-1.5">
+            <FaCalendarAlt className="text-[#00a6fb]" />
+            {item.date}
+          </span>
 
-                        <ul className="space-y-2.5 text-slate-300 text-sm">
-                          {item.points.map((pt, pIdx) => (
-                            <li key={pIdx} className="flex items-start gap-2.5 leading-relaxed">
-                              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#00a6fb] mt-2 flex-shrink-0" />
-                              <span>{pt}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </motion.div>
-                    )}
-                  </div>
+          <span className="flex items-center gap-1.5">
+            <FaMapMarkerAlt className="text-[#00a6fb]" />
+            {item.location}
+          </span>
+        </div>
 
-                  {/* Spacer or Middle Divider Box (Desktop width balancing helper) */}
-                  <div className="hidden md:block w-0" />
+        <ul className="space-y-2.5 text-slate-300 text-sm">
+          {item.points.map((pt, pIdx) => (
+            <li
+              key={pIdx}
+              className="flex items-start gap-2.5 leading-relaxed"
+            >
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#00a6fb] mt-2 flex-shrink-0" />
+              <span>{pt}</span>
+            </li>
+          ))}
+        </ul>
+      </motion.div>
+    );
 
-                  {/* Right Side Container (Blank on Even indexes in desktop) */}
-                  <div className="w-full md:w-1/2 pl-12 md:pl-12 flex justify-start items-center order-3">
-                    {(!isEven || true) && (
-                      /* On mobile, render both columns on the right. In desktop, render odd ones here. */
-                      <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
-                        whileHover={{ y: -4 }}
-                        className={`w-full text-left bg-gradient-to-br from-white/10 to-transparent border border-white/15 p-6 rounded-2xl backdrop-blur-md shadow-xl hover:border-[#00a6fb]/45 transition-all duration-300 ${
-                          isEven ? "md:hidden" : "block"
-                        }`}
-                      >
-                        <h3 className="text-xl font-bold text-white mb-1">
-                          {item.title}
-                        </h3>
-                        <span className="text-sm font-semibold text-[#00a6fb] block mb-3">
-                          {item.subtitle}
-                        </span>
+    return (
+      <div key={index} className="relative z-10">
+        {/* Timeline Icon */}
+        <motion.div
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 150,
+            delay: 0.15,
+          }}
+          viewport={{ once: true }}
+          whileHover={{ scale: 1.15 }}
+          className="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-2 w-9 h-9 rounded-full bg-slate-900 border-2 border-[#00a6fb] flex items-center justify-center text-white text-base shadow-lg shadow-[#00a6fb]/20"
+        >
+          <span className="text-[#00a6fb]">
+            {item.icon}
+          </span>
+        </motion.div>
 
-                        <div className="flex flex-wrap gap-4 text-xs text-slate-400 mb-4 font-medium">
-                          <span className="flex items-center gap-1.5">
-                            <FaCalendarAlt className="text-[#00a6fb]" /> {item.date}
-                          </span>
-                          <span className="flex items-center gap-1.5">
-                            <FaMapMarkerAlt className="text-[#00a6fb]" /> {item.location}
-                          </span>
-                        </div>
+        {/* Mobile Layout */}
+        <div className="md:hidden pl-12">
+          <Card />
+        </div>
 
-                        <ul className="space-y-2.5 text-slate-300 text-sm">
-                          {item.points.map((pt, pIdx) => (
-                            <li key={pIdx} className="flex items-start gap-2.5 leading-relaxed">
-                              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#00a6fb] mt-2 flex-shrink-0" />
-                              <span>{pt}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </motion.div>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
+        {/* Desktop Layout */}
+        <div className="hidden md:flex items-stretch">
+          {/* Left Side */}
+          <div className="w-1/2 pr-12 flex justify-end">
+            {isEven && <Card />}
           </div>
+
+          {/* Right Side */}
+          <div className="w-1/2 pl-12 flex justify-start">
+            {!isEven && <Card />}
+          </div>
+        </div>
+      </div>
+    );
+  })}
+</div>
         </div>
 
       </div>
