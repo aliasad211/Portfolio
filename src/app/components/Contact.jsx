@@ -93,7 +93,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-2xl border border-white/15 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-md p-8 flex flex-col gap-8 shadow-xl"
+            className="rounded-2xl border border-slate-700 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-md p-8 flex flex-col gap-8 shadow-xl"
           >
             <div>
               <h3 className="text-2xl font-bold text-white mb-3">Let&apos;s Connect</h3>
@@ -129,7 +129,7 @@ export default function Contact() {
             </ul>
 
             {/* Divider */}
-            <div className="border-t border-white/10 pt-6">
+            <div className="border-t border-slate-700 pt-6">
               <p className="text-xs text-slate-500 mb-4 font-medium">Follow me on:</p>
               <div className="flex gap-3">
                 {socials.map((s, i) => (
@@ -139,7 +139,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
-                    className="w-10 h-10 rounded-full border border-white/20 bg-white/5 flex items-center justify-center text-slate-300 hover:border-[#00a6fb] hover:text-[#00a6fb] transition-all duration-300"
+                    className="w-10 h-10 rounded-full border border-slate-700 bg-white/5 flex items-center justify-center text-slate-300 hover:border-[#00a6fb] hover:text-[#00a6fb] transition-all duration-300"
                   >
                     {s.icon}
                   </a>
@@ -154,7 +154,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-2xl border border-white/15 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-md p-8 shadow-xl"
+            className="rounded-2xl border border-slate-700 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-md p-8 shadow-xl"
           >
             <h3 className="text-2xl font-bold text-white mb-6">Send Message</h3>
 
@@ -180,7 +180,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="Enter your name"
-                  className="w-full bg-slate-900/80 border border-slate-700 rounded-xl p-3.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00a6fb] focus:ring-1 focus:ring-[#00a6fb] transition-all duration-200"
+                  className="w-full bg-grey-400 border border-slate-700 rounded-xl p-3.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00a6fb] focus:ring-1 focus:ring-[#00a6fb] transition-all duration-200"
                 />
               </div>
 
@@ -195,7 +195,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="Enter your email"
-                  className="w-full bg-slate-900/80 border border-slate-700 rounded-xl p-3.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00a6fb] focus:ring-1 focus:ring-[#00a6fb] transition-all duration-200"
+                  className="w-full bg-grey-400 border border-slate-700 rounded-xl p-3.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00a6fb] focus:ring-1 focus:ring-[#00a6fb] transition-all duration-200"
                 />
               </div>
 
@@ -210,7 +210,7 @@ export default function Contact() {
                   required
                   rows={5}
                   placeholder="Tell me about your project..."
-                  className="w-full bg-slate-900/80 border border-slate-700 rounded-xl p-3.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00a6fb] focus:ring-1 focus:ring-[#00a6fb] resize-none transition-all duration-200"
+                  className="w-full bg-grey-400 border border-slate-700 rounded-xl p-3.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00a6fb] focus:ring-1 focus:ring-[#00a6fb] resize-none transition-all duration-200"
                 />
               </div>
 
