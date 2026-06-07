@@ -97,7 +97,7 @@ export default function Experience() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
         whileHover={{ y: -4 }}
-        className="w-full text-left bg-gradient-to-br from-white/10 to-transparent border border-white/15 p-6 rounded-2xl backdrop-blur-md shadow-xl hover:border-[#00a6fb]/45 transition-all duration-300"
+        className="w-full text-left bg-gradient-to-br from-white/10 to-transparent border border-slate-700 p-6 rounded-2xl backdrop-blur-md shadow-xl hover:border-[#00a6fb]/45 transition-all duration-300"
       >
         <h3 className="text-xl font-bold text-white mb-1">
           {item.title}
