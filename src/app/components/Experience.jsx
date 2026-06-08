@@ -8,8 +8,8 @@ export default function Experience() {
     {
       type: "work",
       title: "Full Stack Developer",
-      subtitle: "AlfaOrigin",
-      date: "jan 2025 - june 2025",
+      subtitle: "Marifahsol",
+      date: "Aug 2025 - Present",
       location: "Onsite",
       points: [
         "Delivered 10+ client projects including e-commerce, portfolios, and dashboards",
@@ -22,8 +22,8 @@ export default function Experience() {
     {
       type: "work",
       title: "Full Stack Developer",
-      subtitle: "Marifahsol",
-      date: "Aug 2025 - Present",
+      subtitle: "AlfaOrigin",
+      date: "jan 2025 - june 2025",
       location: "Onsite",
       points: [
         "Delivered 10+ client projects including e-commerce, portfolios, and dashboards",
