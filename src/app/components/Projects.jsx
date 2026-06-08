@@ -47,9 +47,10 @@ export default function Projects() {
 
   return (
     <section className="py-20 px-6 bg-black">
-      <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">
             My <span className="text-[#00a6fb]">Projects</span>
           </h2>
+          <div className="w-24 h-[3px] bg-gradient-to-r from-[#00a6fb] to-[#d400d4] mx-auto mb-12" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (

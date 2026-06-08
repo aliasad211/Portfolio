@@ -3,6 +3,7 @@ import './globals.css';
 import { Playfair_Display, DM_Sans } from 'next/font/google'
 import Header from './components/Header';
 import Footer from './components/Footer';
+import LandingLoader from './components/LandingLoader';
 
 // const inter = Inter({ subsets: ['latin'] });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
@@ -18,6 +19,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body className="bg-black text-slate-100 flex flex-col min-h-screen relative overflow-x-hidden">
         
+        {/* Advanced Landing Loader */}
+        <LandingLoader />
+
         {/* Animated Background Ambient Glowing Orbs */}
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden min-h-full">
           <div className="bg-glow-orb orb-blue absolute top-[5%] left-[-15%]" />

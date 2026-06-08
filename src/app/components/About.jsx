@@ -1,11 +1,33 @@
+"use client";
+
 import {
   Code2,
   Rocket,
   BrainCircuit,
   BadgeCheck,
 } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function About() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: -30 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
+
   return (
     <section id="about" className="py-20 bg-black px-4 ">
       <div className="max-w-5xl mx-auto">
@@ -44,29 +66,30 @@ export default function About() {
                 Quick Facts
               </h3>
 
-              <ul className="space-y-3 text-slate-300">
-
-  <li className="flex items-center gap-3">
-    <Code2 className="text-[#00a6fb]" size={18} />
-    Full Stack Development
-  </li>
-
-  <li className="flex items-center gap-3">
-    <BrainCircuit className="text-[#00a6fb]" size={18} />
-    Problem Solving Mindset
-  </li>
-
-  <li className="flex items-center gap-3">
-    <Rocket className="text-[#00a6fb]" size={18} />
-    Performance Focused Apps
-  </li>
-
-  <li className="flex items-center gap-3">
-    <BadgeCheck className="text-[#00a6fb]" size={18} />
-    Open to Opportunities
-  </li>
-
-</ul>
+              <motion.ul
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+                className="space-y-3 text-slate-300"
+              >
+                {[
+                  { icon: <Code2 className="text-[#00a6fb]" size={18} />, text: "Full Stack Development" },
+                  { icon: <BrainCircuit className="text-[#00a6fb]" size={18} />, text: "Problem Solving Mindset" },
+                  { icon: <Rocket className="text-[#00a6fb]" size={18} />, text: "Performance Focused Apps" },
+                  { icon: <BadgeCheck className="text-[#00a6fb]" size={18} />, text: "Open to Opportunities" },
+                ].map((fact, idx) => (
+                  <motion.li
+                    key={idx}
+                    variants={itemVariants}
+                    whileHover={{ x: 8, color: "#00a6fb" }}
+                    className="flex items-center gap-3 cursor-default transition-colors duration-200"
+                  >
+                    {fact.icon}
+                    <span>{fact.text}</span>
+                  </motion.li>
+                ))}
+              </motion.ul>
             </div>
 
           </div>

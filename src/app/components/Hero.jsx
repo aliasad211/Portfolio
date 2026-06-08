@@ -55,9 +55,9 @@ export default function Hero() {
 
         {/* LEFT SIDE ANIMATION */}
         <motion.div
-          initial={{ x: -120, opacity: 0 }}
+          initial={{ x: -80, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 2.4, ease: "easeOut" }}
           className="text-center md:text-left space-y-6 order-2 md:order-1"
         >
           {/* <h1 className="font-['Playfair_Display',serif] font-semibold text-[clamp(44px,7vw,50px)] leading-tight">
@@ -105,28 +105,54 @@ export default function Hero() {
 
           {/* BUTTONS */}
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
-            <a
+            <motion.a
               href="#projects"
-              className="bg-[#00a6fb] px-6 py-3 rounded-md font-semibold hover:bg-[#008be3] transition"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-[#00a6fb] px-6 py-3 rounded-md font-semibold hover:bg-[#008be3] transition shadow-lg shadow-[#00a6fb]/20"
             >
               View My Work
-            </a>
+            </motion.a>
 
-            <a
+            <motion.a
               href="/my-cv.pdf"
               download
-              className="border-2 border-[#00a6fb] px-6 py-3 rounded-md flex items-center gap-2 hover:bg-[#00a6fb]/10"
+              whileHover="hover"
+              whileTap={{ scale: 0.95 }}
+              variants={{
+                hover: {
+                  scale: 1.05,
+                  borderColor: "#d400d4",
+                  boxShadow: "0px 0px 15px rgba(212, 0, 212, 0.4)",
+                  backgroundColor: "rgba(212, 0, 212, 0.05)"
+                }
+              }}
+              className="border-2 border-[#00a6fb] px-6 py-3 rounded-md flex items-center gap-2 transition-colors duration-300 font-semibold"
             >
-              Download CV <FaDownload />
-            </a>
+              Download CV{" "}
+              <motion.span
+                variants={{
+                  hover: {
+                    y: [0, 4, 0],
+                    transition: {
+                      repeat: Infinity,
+                      duration: 0.8,
+                      ease: "easeInOut"
+                    }
+                  }
+                }}
+              >
+                <FaDownload className="text-[#00a6fb]" />
+              </motion.span>
+            </motion.a>
           </div>
         </motion.div>
 
         {/* RIGHT SIDE ANIMATION */}
         <motion.div
-          initial={{ x: 120, opacity: 0 }}
+          initial={{ x: 80, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 2.4, ease: "easeOut" }}
           className="flex justify-center items-center order-1 md:order-2"
         >
           <div className="profile-container">
