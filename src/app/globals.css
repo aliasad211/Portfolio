@@ -238,3 +238,55 @@ logo content */
         transform: translate(25%, -15%) scale(1.12);
     }
 }
+
+/* ── Hire Me Button ─────────────────────────────── */
+.hire-me-btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.hire-me-inner {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 2px solid #00a6fb;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hire-me-inner:hover {
+    background: #00a6fb;
+    color: #fff;
+}
+
+/* Shimmer sweep */
+.hire-me-shimmer {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255, 255, 255, 0.35) 50%,
+        transparent 80%
+    );
+    animation: hireMeShimmer 2.4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes hireMeShimmer {
+    0%   { left: -100%; }
+    60%  { left: 130%; }
+    100% { left: 130%; }
+}

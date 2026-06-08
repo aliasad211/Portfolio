@@ -63,9 +63,9 @@ export default function Header() {
       transition={{ duration: 0.6, delay: 2.4, ease: "easeOut" }}
       className="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-slate-800 text-white"
     >
-      {/* Scroll Progress Bar Indicator */}
+      {/* Scroll Progress Bar Indicator — TOP of header */}
       <motion.div
-        className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#00a6fb] to-[#d400d4] origin-left"
+        className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#00a6fb] to-[#d400d4] origin-left z-50"
         style={{ scaleX }}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -106,17 +106,24 @@ export default function Header() {
         
         {/* Desktop Hire Me Button */}
         <div className="hidden md:block">
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Link 
-              href="#contact" 
-              className="border-[#00a6fb] border-2 hover:bg-[#00a6fb] text-white px-6 py-2 rounded-md font-medium transition-all duration-300"
+          <Link href="#contact" className="hire-me-btn">
+            <motion.span
+              className="hire-me-inner"
+              animate={{
+                boxShadow: [
+                  "0 0 8px 2px rgba(0,166,251,0.4)",
+                  "0 0 18px 6px rgba(212,0,212,0.5)",
+                  "0 0 8px 2px rgba(0,166,251,0.4)",
+                ],
+              }}
+              transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
+              whileHover={{ scale: 1.07 }}
+              whileTap={{ scale: 0.94 }}
             >
+              <span className="hire-me-shimmer" />
               Hire Me
-            </Link>
-          </motion.div>
+            </motion.span>
+          </Link>
         </div>
 
         {/* Mobile Hamburger Button */}
