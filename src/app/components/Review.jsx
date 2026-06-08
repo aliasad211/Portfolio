@@ -56,17 +56,15 @@ export default function Review() {
       <div className="max-w-4xl mx-auto">
 
         {/* Heading */}
-        <div className="text-center mb-14">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
-          >
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-14"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             What People <span className="text-[#00a6fb]">Say</span>
-          </motion.h2>
-
+          </h2>
           <div className="w-24 h-[3px] bg-gradient-to-r from-[#00a6fb] to-[#d400d4] mx-auto mb-4" />
 
           <motion.p
@@ -78,7 +76,7 @@ export default function Review() {
           >
             Testimonials from clients and colleagues I've had the pleasure to work with
           </motion.p>
-        </div>
+        </motion.div>
 
         {/* Carousel Card */}
         <div className="relative">

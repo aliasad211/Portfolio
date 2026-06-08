@@ -54,18 +54,15 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto">
         
         {/* Section Heading */}
-        <div className="text-center mb-16">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
-          >
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Experience &amp; <span className="text-[#00a6fb]">Education</span>
-          </motion.h2>
-          
-          {/* Subtle brand gradient line */}
+          </h2>
           <div className="w-24 h-[3px] bg-gradient-to-r from-[#00a6fb] to-[#d400d4] mx-auto mb-4" />
           
           <motion.p
@@ -77,7 +74,7 @@ export default function Experience() {
           >
             My journey through the world of technology and development
           </motion.p>
-        </div>
+        </motion.div>
 
         {/* Timeline Container */}
         <div className="relative">
