@@ -31,12 +31,17 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-black px-4 ">
       <div className="max-w-5xl mx-auto">
-        
-        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-12"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">
             About <span className="text-[#00a6fb]">Me</span>
           </h2>
-
           <div className="w-24 h-[3px] bg-gradient-to-r from-[#00a6fb] to-[#d400d4] mx-auto mb-12" />
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
