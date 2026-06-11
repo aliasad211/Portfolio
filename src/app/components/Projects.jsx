@@ -11,13 +11,13 @@ const FILTERS = ["All", "Frontend", "Backend", "Fullstack", "Mobile"];
 // ─── Projects Data ────────────────────────────────────────────────────────────
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Foodie Website",
     description: "Modern portfolio built with Next.js and Tailwind CSS featuring smooth animations and a responsive layout.",
-    image: "/projects/portfolio.png",
-    tech: ["Next.js", "Tailwind", "Framer Motion"],
+    image: "/Foodie.png",
+    tech: ["HTML", "CSS", "JS"],
     category: "Frontend",
-    live: "#",
-    github: "#",
+    live: "https://foodie-website-lyart.vercel.app",
+    github: "https://github.com/aliasad211/FoodieWebsite",
   },
   {
     title: "E-Commerce App",
