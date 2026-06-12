@@ -20,13 +20,13 @@ const projects = [
     github: "https://github.com/aliasad211/FoodieWebsite",
   },
   {
-    title: "E-Commerce App",
-    description: "Full stack ecommerce application with cart, authentication and Stripe payments integration.",
+    title: "Wandarlust",
+    description: "WandarLust is a premium, fully-functional web application that allows travelers and property owners to list, discover, review, and map amazing vacation rentals and travel stays across the globe.Inspired by Airbnb, it features robust user authentication, interactive map rendering, dynamic image uploads, and listing management.",
     image: "/wandarlust.jfif",
-    tech: ["React", "Node.js", "MongoDB"],
+    tech: ["HTML", "CSS", "Node.js", "MongoDB"],
     category: "Fullstack",
-    live: "#",
-    github: "#",
+    live: "https://wandarlust-4-6coi.onrender.com",
+    github: "https://github.com/aliasad211/wandarlust",
   },
   {
     title: "REST API Service",
