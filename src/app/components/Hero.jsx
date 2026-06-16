@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from "react";
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
+  FaGithub,
   FaLinkedinIn,
+  FaInstagram,
+  FaTelegramPlane,
   FaDownload,
 } from 'react-icons/fa';
 
@@ -86,14 +86,16 @@ export default function Hero() {
           <div className="flex justify-center md:justify-start pt-2">
             <ul className="flex space-x-4">
               {[
-                { icon: <FaFacebookF />, url: "https://facebook.com" },
-                { icon: <FaTwitter />, url: "https://twitter.com" },
-                { icon: <FaInstagram />, url: "https://instagram.com" },
-                { icon: <FaLinkedinIn />, url: "https://linkedin.com" },
+                { icon: <FaGithub />, url: "https://github.com/aliasad211" },
+                { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/in/muhammad-ali-asad-0b34562b1" },
+                { icon: <FaInstagram />, url: "https://www.instagram.com/its_me_aliasad785?igsh=NmV4NXdwMHFubTBv" },
+                { icon: <FaTelegramPlane />, url: "http://t.me/ItsAliAsad785" },
               ].map((social, index) => (
                 <li key={index}>
                   <a
                     href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full border border-slate-400 flex items-center justify-center hover:text-[#00a6fb] hover:border-[#00a6fb] transition-all"
                   >
                     {social.icon}

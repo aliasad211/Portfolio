@@ -11,9 +11,9 @@ export default function Footer() {
         </p>
 
         {/* Social Links */}
-        <div className="flex space-x-6 text-sm">
+        <div className="flex space-x-6 text-sm flex-wrap gap-y-2">
           <a 
-            href="https://github.com" 
+            href="https://github.com/aliasad211" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-white hover:text-[#00a6fb] transition-colors duration-300 font-medium"
@@ -21,12 +21,28 @@ export default function Footer() {
             GitHub
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/muhammad-ali-asad-0b34562b1" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-white hover:text-[#00a6fb] transition-colors duration-300 font-medium"
           >
             LinkedIn
+          </a>
+          <a 
+            href="https://www.instagram.com/its_me_aliasad785?igsh=NmV4NXdwMHFubTBv" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-white hover:text-[#00a6fb] transition-colors duration-300 font-medium"
+          >
+            Instagram
+          </a>
+          <a 
+            href="http://t.me/ItsAliAsad785" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-white hover:text-[#00a6fb] transition-colors duration-300 font-medium"
+          >
+            Telegram
           </a>
         </div>
 

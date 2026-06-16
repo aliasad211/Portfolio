@@ -8,7 +8,8 @@ import {
   FaMapMarkerAlt,
   FaGithub,
   FaLinkedinIn,
-  FaTwitter,
+  FaInstagram,
+  FaTelegramPlane,
   FaPaperPlane,
 } from "react-icons/fa";
 
@@ -34,9 +35,10 @@ const contactDetails = [
 ];
 
 const socials = [
-  { icon: <FaGithub size={18} />, href: "https://github.com", label: "GitHub" },
-  { icon: <FaLinkedinIn size={18} />, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: <FaTwitter size={18} />, href: "https://twitter.com", label: "Twitter" },
+  { icon: <FaGithub size={18} />, href: "https://github.com/aliasad211", label: "GitHub" },
+  { icon: <FaLinkedinIn size={18} />, href: "https://www.linkedin.com/in/muhammad-ali-asad-0b34562b1", label: "LinkedIn" },
+  { icon: <FaInstagram size={18} />, href: "https://www.instagram.com/its_me_aliasad785?igsh=NmV4NXdwMHFubTBv", label: "Instagram" },
+  { icon: <FaTelegramPlane size={18} />, href: "http://t.me/ItsAliAsad785", label: "Telegram" },
 ];
 
 export default function Contact() {
