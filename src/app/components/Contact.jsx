@@ -17,13 +17,13 @@ const contactDetails = [
     icon: <FaEnvelope />,
     label: "Email",
     value: "info.aliasad785@gmail.com",
-    href: "mailto:info.aliasad785@gmail.com",
+    href: "mailto:info.aliasad785@gmail.com?subject=Project%20Inquiry&body=Hi%20Ali%20Asad,",
   },
   {
     icon: <FaPhone />,
     label: "Phone",
     value: "+923121355785",
-    href: "tel:+923121355785",
+    href: "https://wa.me/923121355785?text=Hi%20Ali%20Asad,%20I%20visited%20your%20portfolio%20and%20want%20to%20discuss%20a%20project.",
   },
   {
     icon: <FaMapMarkerAlt />,
