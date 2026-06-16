@@ -115,7 +115,7 @@ export default function Hero() {
             </motion.a>
 
             <motion.a
-              href="/my-cv.pdf"
+              href="/MAliAsad_CV.pdf"
               download
               whileHover="hover"
               whileTap={{ scale: 0.95 }}
