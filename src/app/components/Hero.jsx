@@ -64,8 +64,23 @@ export default function Hero() {
             I’m a <span className="text-[#00a6fb] italic">MERN Developer</span>
           </h1> */}
 
+          {/* AVAILABLE FOR WORK BADGE */}
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 2.4 }}
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-white text-xs font-bold tracking-widest uppercase w-fit mx-auto md:mx-0"
+            style={{ background: "linear-gradient(135deg, #00a6fb, #d400d4)" }}
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+            </span>
+            Available for Work
+          </motion.div>
+
        <h1 className="font-['Playfair_Display',serif] font-semibold text-[clamp(44px,7vw,50px)] leading-tight text-white">
-      I’m a{" "}
+      I'm a{" "}
       <span className="text-[#00a6fb] italic inline-block relative">
         {currentText}
         {/* Blinking Cursor Effect */}
