@@ -12,7 +12,7 @@ const FILTERS = ["All", "Frontend", "Backend", "Fullstack", "Mobile"];
 const projects = [
   {
     title: "Foodie Website",
-    description: "Modern portfolio built with Next.js and Tailwind CSS featuring smooth animations and a responsive layout.",
+    description: "Foodie is a beautifully designed, fully responsive food website featuring an elegant UI with smooth animations, an interactive menu section, customer testimonials, and a seamless ordering experience. Built with a mobile-first approach to deliver a premium dining experience online.",
     image: "/Foodie.png",
     tech: ["HTML", "CSS", "JS"],
     category: "Frontend",
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Wandarlust",
     description: "WandarLust is a premium, fully-functional web application that allows travelers and property owners to list, discover, review, and map amazing vacation rentals and travel stays across the globe.Inspired by Airbnb, it features robust user authentication, interactive map rendering, dynamic image uploads, and listing management.",
-    image: "/wandarlust.jfif",
+    image: "/wandarlust.jpg",
     tech: ["HTML", "CSS", "Node.js", "MongoDB"],
     category: "Fullstack",
     live: "https://wandarlust-4-6coi.onrender.com",
@@ -134,7 +134,7 @@ export default function Projects() {
                 className="project-card group"
               >
                 {/* Image */}
-                <div className="relative overflow-hidden h-52">
+                <div className="relative overflow-hidden h-48">
                   <Image
                     src={project.image}
                     alt={project.title}
