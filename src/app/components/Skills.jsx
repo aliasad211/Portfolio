@@ -309,7 +309,7 @@ export default function TechStack() {
                     <motion.div
                       key={i}
                       whileHover={{ scale: 1.05 }}
-                      className="flex items-center gap-3 rounded-2xl border border-[#00a6fb] bg-white/5 px-4 py-3 text-sm hover:bg-white/10 transition-all duration-300"
+                      className="flex items-center gap-3 rounded-2xl border border-slate-700 bg-white/5 px-4 py-3 text-sm hover:bg-white/10 transition-all duration-300"
                     >
                       <span className="text-2xl">
                         {tech.icon}
