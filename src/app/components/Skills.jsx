@@ -294,7 +294,7 @@ export default function TechStack() {
                 y: -5,
                 scale: 1.02,
               }}
-              className={`${section.className} relative overflow-hidden rounded-3xl border border-[#00a6fb] bg-white/10 backdrop-blur-xl p-6 shadow-lg hover:border-[#00a6fb] hover:shadow-[#00a6fb] transition-all duration-300`}
+              className={`${section.className} relative overflow-hidden rounded-2xl border border-slate-700 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-md p-6 shadow-xl hover:border-[#00a6fb]/45 transition-all duration-300`}
             >
               {/* Glow */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#00a6fb]/20 via-[#00a6fb]/20 to-transparent opacity-0 hover:opacity-100 transition-all duration-500" />
@@ -335,7 +335,7 @@ export default function TechStack() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           whileHover={{ y: -6, scale: 1.015 }}
-          className="relative overflow-hidden rounded-3xl border border-[#00a6fb]/35 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-xl p-8 md:p-12 mt-12 text-center shadow-xl transition-all duration-300 hover:border-[#00a6fb]/60 hover:shadow-lg hover:shadow-[#00a6fb]/10"
+          className="relative overflow-hidden rounded-2xl border border-slate-700 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-md p-8 md:p-12 mt-12 text-center shadow-xl transition-all duration-300 hover:border-[#00a6fb]/45"
         >
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-[3px] bg-gradient-to-r from-[#00a6fb] to-[#d400d4]" />
           

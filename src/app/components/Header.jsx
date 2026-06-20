@@ -61,7 +61,7 @@ export default function Header() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, delay: 2.4, ease: "easeOut" }}
-      className="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-slate-800 text-white"
+      className="sticky top-0 z-50 bg-black border-b border-slate-800 text-white"
     >
       {/* Scroll Progress Bar Indicator — TOP of header */}
       <motion.div
@@ -141,7 +141,7 @@ export default function Header() {
 
       {/* Mobile Drawer (Smooth Dropdown) */}
       <div
-        className={`md:hidden absolute top-16 left-0 w-full bg-black/95 border-b border-slate-800 transition-all duration-350 ease-in-out ${
+        className={`md:hidden absolute top-16 left-0 w-full bg-black border-b border-slate-800 transition-all duration-350 ease-in-out ${
           isOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-4 invisible pointer-events-none'
         }`}
       >

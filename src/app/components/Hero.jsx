@@ -175,7 +175,7 @@ export default function Hero() {
           <div className="profile-container">
             <div className="innerdiv">
               <Image
-                src="/home-img.png"
+                src="/image.png"
                 alt="Ali Asad"
                 width={350}
                 height={350}

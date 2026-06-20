@@ -66,7 +66,7 @@ export default function About() {
               scalable and performant applications.
             </p>
 
-            <div className="bg-slate-900 p-6 rounded-xl border border-slate-800">
+            <div className="bg-gradient-to-br from-white/10 to-transparent border border-slate-700 p-6 rounded-2xl backdrop-blur-md shadow-xl hover:border-[#00a6fb]/45 transition-all duration-300">
               <h3 className="text-xl font-semibold mb-4 text-[#00a6fb]">
                 Quick Facts
               </h3>
