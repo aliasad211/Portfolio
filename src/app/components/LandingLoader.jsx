@@ -30,14 +30,14 @@ export default function LandingLoader() {
           <motion.div
             initial={{ x: 0 }}
             exit={{ x: "-100%", transition: { duration: 0.8, ease: [0.77, 0, 0.175, 1] } }}
-            className="absolute top-0 left-0 w-1/2 h-full bg-[#030712] border-r border-[#00a6fb]/10"
+            className="absolute top-0 left-0 w-1/2 h-full bg-black border-r border-[#00a6fb]/10"
           />
 
           {/* Right panel slide out */}
           <motion.div
             initial={{ x: 0 }}
             exit={{ x: "100%", transition: { duration: 0.8, ease: [0.77, 0, 0.175, 1] } }}
-            className="absolute top-0 right-0 w-1/2 h-full bg-[#030712] border-l border-[#00a6fb]/10"
+            className="absolute top-0 right-0 w-1/2 h-full bg-black border-l border-[#00a6fb]/10"
           />
 
           {/* Loading Content Container */}

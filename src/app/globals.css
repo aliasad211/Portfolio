@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #0B0B10;
   --foreground: #171717;
 }
 /* Chrome, Safari, aur Opera ke liye scrollbar hatane ka tareeqa */
@@ -20,11 +20,12 @@ html, body {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-black: #0B0B10;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0B0B10;
     --foreground: #ededed;
   }
 }
