@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiFilter, FiExternalLink, FiGithub } from "react-icons/fi";
 
 // ─── Filter Categories ────────────────────────────────────────────────────────
-const FILTERS = ["All", "Frontend", "Backend", "Fullstack", "Mobile"];
+const FILTERS = ["All", "Frontend", "Fullstack", "Mobile"];
 
 // ─── Projects Data ────────────────────────────────────────────────────────────
 const projects = [
@@ -31,11 +31,11 @@ const projects = [
   {
     title: "E-Commerce Frontend",
     description: "TechZone is a premium e-commerce web application featuring a modern product catalog, interactive cart management, dynamic search/filter features, and a smooth checkout flow.",
-    image: "/projects/ecommerce.png",
-    tech: ["React", "Next.js", "Tailwind CSS", "Redux"],
-    category: "Full Stack",
-    live: "#",
-    github: "#",
+    image: "/TechZone.png",
+    tech: ["React", "JavaScript", "MongoDB", "Node.js"],
+    category: "Fullstack",
+    live: "https://tech-zone-frontend.vercel.app/",
+    github: "https://github.com/aliasad211/TechZone-frontend",
   },
   {
     title: "Personal Portfolio",
