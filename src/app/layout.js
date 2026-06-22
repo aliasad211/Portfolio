@@ -13,9 +13,9 @@ export const metadata = {
   title: 'My Portfolio',
   description: 'Welcome to my professional web development portfolio',
   icons: {
-    icon: '/home-img.png',
-    shortcut: '/home-img.png',
-    apple: '/home-img.png',
+    icon: '/image.png',
+    shortcut: '/image.png',
+    apple: '/image.png',
   },
 };
 
