@@ -43,7 +43,7 @@ const projects = [
     image: "/portfolio.png",
     tech: ["Next.js", "React", "Framer Motion", "Tailwind CSS"],
     category: "Frontend",
-    live: "#",
+    live: "https://aliasad-portfolio.vercel.app/",
     github: "https://github.com/aliasad211/Portfolio",
   },
 ];
