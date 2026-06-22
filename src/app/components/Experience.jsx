@@ -8,28 +8,63 @@ export default function Experience() {
     {
       type: "work",
       title: "Full Stack Developer",
-      subtitle: "Marifahsol",
+      subtitle: (
+        <span>
+          Marifahsol ({" "}
+          <a
+            href="https://carencleanss.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white underline transition-colors"
+          >
+            CareNClean
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://swiss411.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white underline transition-colors"
+          >
+            Swiss411
+          </a>{" "}
+          )
+        </span>
+      ),
       date: "Aug 2025 - Present",
       location: "Onsite",
       points: [
-        "Delivered 10+ client projects including e-commerce, portfolios, and dashboards",
-        "Built scalable MERN stack applications with responsive UI and REST APIs",
-        "Collaborated with international clients on Upwork and Fiverr with 5-star ratings",
-        "Integrated payment gateways, authentication, and third-party APIs for real-world apps",
+        "Architected and developed key commercial applications, CareNClean and Swiss411, using Next.js and React to deliver premium, pixel-perfect user interfaces",
+        "Implemented robust global state management and REST API integrations for Swiss411 to facilitate complex search queries and real-time page updates",
+        "Integrated secure payment gateways and booking services in CareNClean, improving conversion rates and user scheduling efficiency",
+        "Utilized Tailwind CSS and Framer Motion across both systems to construct fully responsive layouts and high-performance micro-animations",
       ],
       icon: <FaBriefcase />,
     },
     {
       type: "work",
       title: "Full Stack Developer",
-      subtitle: "AlfaOrigin",
+      subtitle: (
+        <span>
+          AlfaOrigin ({" "}
+          <a
+            href="https://checkntrust.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white underline transition-colors"
+          >
+            CheckNTrust
+          </a>{" "}
+          )
+        </span>
+      ),
       date: "jan 2025 - june 2025",
       location: "Onsite",
       points: [
-        "Delivered 10+ client projects including e-commerce, portfolios, and dashboards",
-        "Built scalable MERN stack applications with responsive UI and REST APIs",
-        "Collaborated with international clients on Upwork and Fiverr with 5-star ratings",
-        "Integrated payment gateways, authentication, and third-party APIs for real-world apps",
+        "Contributed directly to the core development of CheckNTrust, designing a secure and highly intuitive user verification flow",
+        "Designed and optimized server-side REST API endpoints for CheckNTrust using Node.js and Express to handle concurrent user requests",
+        "Structured secure MongoDB schemas and implemented JWT-based authentication policies to safeguard sensitive customer data inside CheckNTrust",
+        "Conducted load testing and debugged frontend performance bottlenecks, improving initial page load speed and input validation response times",
       ],
       icon: <FaBriefcase />,
     },
