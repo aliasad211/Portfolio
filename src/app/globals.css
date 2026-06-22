@@ -103,9 +103,26 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: opacity 0.5s ease; /* Transition only opacity to prevent conflict with transform animation */
     pointer-events: none;
     z-index: 3;
+}
+
+.my-profile-pic {
+    animation: profile-spin 10s ease-in-out infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes profile-spin {
+    0%, 80% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    92% {
+        transform: perspective(1000px) rotateY(390deg); /* Spins 390 degrees horizontally (right to left) */
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg); /* Settles back to flat position */
+    }
 }
 
 .profile-container:hover .innerdiv img {
