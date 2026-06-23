@@ -179,11 +179,17 @@ logo content */
 
 .logocontent h1 {
     position: absolute;
-    left: 50%;
+    left: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
+    transform: translateY(-50%);
+    font-size: 2.3em;
     font-style: italic;
+}
+
+@media (min-width: 640px) {
+    .logocontent h1 {
+        font-size: 3em;
+    }
 }
 
 .logocontent h1:nth-child(1) {
