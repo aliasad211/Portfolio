@@ -79,7 +79,7 @@ export default function Hero() {
             Available for Work
           </motion.div>
 
-       <h1 className="font-['Playfair_Display',serif] font-semibold text-[clamp(44px,7vw,50px)] leading-tight text-white">
+       <h1 className="font-['Playfair_Display',serif] font-semibold text-[clamp(28px,7vw,50px)] leading-tight text-white whitespace-nowrap">
       I'm a{" "}
       <span className="text-[#00a6fb] italic inline-block relative">
         {currentText}
@@ -121,12 +121,12 @@ export default function Hero() {
           </div>
 
           {/* BUTTONS */}
-          <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
+          <div className="flex justify-center md:justify-start gap-2 sm:gap-4 pt-4">
             <motion.a
               href="#projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#00a6fb] px-6 py-3 rounded-md font-semibold hover:bg-[#008be3] transition shadow-lg shadow-[#00a6fb]/20"
+              className="bg-[#00a6fb] px-4 sm:px-6 py-2.5 sm:py-3 rounded-md font-semibold hover:bg-[#008be3] transition shadow-lg shadow-[#00a6fb]/20 text-sm sm:text-base whitespace-nowrap"
             >
               View My Work
             </motion.a>
@@ -144,7 +144,7 @@ export default function Hero() {
                   backgroundColor: "rgba(212, 0, 212, 0.05)"
                 }
               }}
-              className="border-2 border-[#00a6fb] px-6 py-3 rounded-md flex items-center gap-2 transition-colors duration-300 font-semibold"
+              className="border-2 border-[#00a6fb] px-4 sm:px-6 py-2.5 sm:py-3 rounded-md flex items-center gap-1.5 sm:gap-2 transition-colors duration-300 font-semibold text-sm sm:text-base whitespace-nowrap"
             >
               Download CV{" "}
               <motion.span
@@ -159,7 +159,7 @@ export default function Hero() {
                   }
                 }}
               >
-                <FaDownload className="text-[#00a6fb]" />
+                <FaDownload className="text-[#00a6fb] text-xs sm:text-sm" />
               </motion.span>
             </motion.a>
           </div>

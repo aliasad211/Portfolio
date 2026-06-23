@@ -176,12 +176,12 @@ export default function Projects() {
                   </div>
 
                   {/* Buttons */}
-                  <div className="flex gap-3">
+                  <div className="flex gap-2 sm:gap-3">
                     {project.apk ? (
                       <a
                         href={project.apk}
                         download="HerbsLens.apk"
-                        className="project-btn-primary"
+                        className="project-btn-primary whitespace-nowrap"
                       >
                         <FiDownload size={15} />
                         Download APK
@@ -192,7 +192,7 @@ export default function Projects() {
                           href={project.live}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="project-btn-primary"
+                          className="project-btn-primary whitespace-nowrap"
                         >
                           <FiExternalLink size={15} />
                           Live Demo
@@ -203,7 +203,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="project-btn-outline"
+                      className="project-btn-outline whitespace-nowrap"
                     >
                       <FiGithub size={15} />
                       GitHub
