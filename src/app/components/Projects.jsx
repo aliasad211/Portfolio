@@ -3,13 +3,22 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiFilter, FiExternalLink, FiGithub } from "react-icons/fi";
+import { FiFilter, FiExternalLink, FiGithub, FiDownload } from "react-icons/fi";
 
 // ─── Filter Categories ────────────────────────────────────────────────────────
 const FILTERS = ["All", "Frontend", "Fullstack", "Mobile"];
 
 // ─── Projects Data ────────────────────────────────────────────────────────────
 const projects = [
+  {
+    title: "HerbsLens",
+    description: "HerbsLens is a modern AI-powered mobile application designed to help users identify herbs using image recognition and explore their medicinal uses, benefits, and health suggestibility. It features a TensorFlow image classifier, custom camera scanner integration, and a comprehensive database of herbal remedies.",
+    image: "/herbslens.png",
+    tech: ["React Native", "TensorFlow", "Node.js", "MongoDB"],
+    category: "Mobile",
+    github: "https://github.com/aliasad211/HerbsLens",
+    apk: "/HerbsLens.apk",
+  },
   {
     title: "Foodie Website",
     description: "Foodie is a beautifully designed, fully responsive food website featuring an elegant UI with smooth animations, an interactive menu section, customer testimonials, and a seamless ordering experience. Built with a mobile-first approach to deliver a premium dining experience online.",
@@ -168,15 +177,28 @@ export default function Projects() {
 
                   {/* Buttons */}
                   <div className="flex gap-3">
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-btn-primary"
-                    >
-                      <FiExternalLink size={15} />
-                      Live Demo
-                    </a>
+                    {project.apk ? (
+                      <a
+                        href={project.apk}
+                        download="HerbsLens.apk"
+                        className="project-btn-primary"
+                      >
+                        <FiDownload size={15} />
+                        Download APK
+                      </a>
+                    ) : (
+                      project.live && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-btn-primary"
+                        >
+                          <FiExternalLink size={15} />
+                          Live Demo
+                        </a>
+                      )
+                    )}
                     <a
                       href={project.github}
                       target="_blank"
