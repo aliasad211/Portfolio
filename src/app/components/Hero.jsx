@@ -50,7 +50,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-black text-white px-6 py-12 md:py-0"
+      className="min-h-[calc(100vh-4rem)] flex items-center justify-center text-white px-6 py-12 md:py-0"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
 

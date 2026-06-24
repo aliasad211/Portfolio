@@ -78,7 +78,7 @@ export default function Projects() {
       : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section id="projects" className="py-20 px-6 bg-black relative overflow-hidden">
+    <section id="projects" className="py-20 px-6 relative overflow-hidden">
 
       {/* ── Section Heading ── */}
       <motion.div

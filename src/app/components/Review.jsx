@@ -52,7 +52,7 @@ export default function Review() {
   const review = testimonials[current];
 
   return (
-    <section className="py-20 px-6 bg-black">
+    <section className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
 
         {/* Heading */}

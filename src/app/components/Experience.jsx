@@ -85,7 +85,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 px-6 bg-black">
+    <section id="experience" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         
         {/* Section Heading */}
