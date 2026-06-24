@@ -87,8 +87,8 @@ export default function About() {
                   <motion.li
                     key={idx}
                     variants={itemVariants}
-                    whileHover={{ x: 8, color: "#00a6fb" }}
-                    className="flex items-center gap-3 cursor-default transition-colors duration-200"
+                    whileHover={{ x: 8 }}
+                    className="about-fact-item flex items-center gap-3 cursor-default"
                   >
                     {fact.icon}
                     <span>{fact.text}</span>
