@@ -276,7 +276,7 @@ export default function TechStack() {
           className="mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[#00a6fb] text-center mb-4">
-            Tech <span className=" text-white">Stack</span>
+            Tech <span className="heading-span-white">Stack</span>
           </h2>
           <div className="w-24 h-[3px] bg-gradient-to-r from-[#00a6fb] to-[#d400d4] mx-auto mb-12" />
         </motion.div>

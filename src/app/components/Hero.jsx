@@ -138,10 +138,7 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
               variants={{
                 hover: {
-                  scale: 1.05,
-                  borderColor: "#d400d4",
-                  boxShadow: "0px 0px 15px rgba(212, 0, 212, 0.4)",
-                  backgroundColor: "rgba(212, 0, 212, 0.05)"
+                  scale: 1.05
                 }
               }}
               className="cv-btn border-2 border-[#00a6fb] px-4 sm:px-6 py-2.5 sm:py-3 rounded-md flex items-center gap-1.5 sm:gap-2 transition-colors duration-300 font-semibold text-sm sm:text-base whitespace-nowrap text-white"

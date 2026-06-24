@@ -24,20 +24,20 @@ export default function LandingLoader() {
             opacity: 0,
             transition: { duration: 0.8, ease: "easeInOut", when: "afterChildren" }
           }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black select-none"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#030712] select-none"
         >
           {/* Left panel slide out */}
           <motion.div
             initial={{ x: 0 }}
             exit={{ x: "-100%", transition: { duration: 0.8, ease: [0.77, 0, 0.175, 1] } }}
-            className="absolute top-0 left-0 w-1/2 h-full bg-black border-r border-[#00a6fb]/10"
+            className="absolute top-0 left-0 w-1/2 h-full bg-[#030712] border-r border-[#00a6fb]/10"
           />
 
           {/* Right panel slide out */}
           <motion.div
             initial={{ x: 0 }}
             exit={{ x: "100%", transition: { duration: 0.8, ease: [0.77, 0, 0.175, 1] } }}
-            className="absolute top-0 right-0 w-1/2 h-full bg-black border-l border-[#00a6fb]/10"
+            className="absolute top-0 right-0 w-1/2 h-full bg-[#030712] border-l border-[#00a6fb]/10"
           />
 
           {/* Loading Content Container */}
@@ -83,7 +83,7 @@ export default function LandingLoader() {
             </div>
 
             {/* Horizontal progress bar */}
-            <div className="w-48 h-[2px] bg-slate-800 rounded-full mt-4 overflow-hidden">
+            <div className="w-48 h-[2px] bg-slate-700 rounded-full mt-4 overflow-hidden">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}

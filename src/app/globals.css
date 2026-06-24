@@ -13,6 +13,11 @@
   --filter-btn-hover-bg: rgba(0, 166, 251, 0.08);
   --about-fact-color: #cbd5e1;
   --blinking-cursor-color: #ffffff;
+  --cv-hover-border: #00a6fb;
+  --cv-hover-bg: rgba(0, 166, 251, 0.05);
+  --cv-hover-text: #ffffff;
+  --cv-hover-shadow: 0px 0px 15px rgba(0, 166, 251, 0.4);
+  --timeline-icon-bg: #0f172a;
 }
 /* Chrome, Safari, aur Opera ke liye scrollbar hatane ka tareeqa */
 ::-webkit-scrollbar {
@@ -143,7 +148,7 @@ body {
     position: relative;
     font-size: 1.5em;
     text-align: center;
-    color: #fff;
+    color: #ffffff !important;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -476,6 +481,11 @@ logo content */
     --filter-btn-hover-bg: rgba(0, 166, 251, 0.04);
     --about-fact-color: #475569;
     --blinking-cursor-color: #0F172A;
+    --cv-hover-border: #00a6fb;
+    --cv-hover-bg: #00a6fb; /* Solid blue in light mode */
+    --cv-hover-text: #ffffff;
+    --cv-hover-shadow: 0px 0px 15px rgba(0, 166, 251, 0.4);
+    --timeline-icon-bg: #ffffff;
 }
 
 .light body {
@@ -664,8 +674,19 @@ logo content */
     color: #00a6fb !important;
 }
 
-.light .cv-btn:hover {
-    color: #FFFFFF !important;
+.cv-btn {
+    transition: all 0.3s ease !important;
+}
+
+.cv-btn:hover {
+    border-color: var(--cv-hover-border) !important;
+    background-color: var(--cv-hover-bg) !important;
+    color: var(--cv-hover-text) !important;
+    box-shadow: var(--cv-hover-shadow) !important;
+}
+
+.cv-btn:hover svg {
+    color: var(--cv-hover-text) !important;
 }
 
 .about-fact-item {
@@ -679,4 +700,16 @@ logo content */
 
 .blinking-cursor {
     background-color: var(--blinking-cursor-color) !important;
+}
+
+.heading-span-white {
+    color: #ffffff !important;
+}
+
+.light .heading-span-white {
+    color: #00a6fb !important;
+}
+
+.timeline-icon-wrapper {
+    background-color: var(--timeline-icon-bg) !important;
 }

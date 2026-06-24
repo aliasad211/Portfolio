@@ -178,7 +178,7 @@ export default function Experience() {
           }}
           viewport={{ once: true }}
           whileHover={{ scale: 1.15 }}
-          className="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-2 w-9 h-9 rounded-full bg-slate-900 border-2 border-[#00a6fb] flex items-center justify-center text-white text-base shadow-lg shadow-[#00a6fb]/20"
+          className="timeline-icon-wrapper absolute left-0 md:left-1/2 md:-translate-x-1/2 top-2 w-9 h-9 rounded-full bg-slate-900 border-2 border-[#00a6fb] flex items-center justify-center text-white text-base shadow-lg shadow-[#00a6fb]/20"
         >
           <span className="text-[#00a6fb]">
             {item.icon}
