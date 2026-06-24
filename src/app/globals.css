@@ -3,6 +3,14 @@
 :root {
   --background: #0B0B10;
   --foreground: #171717;
+  --contact-color: #ffffff;
+  --experience-link-hover: #ffffff;
+  --filter-btn-border: rgba(255, 255, 255, 0.12);
+  --filter-btn-bg: rgba(255, 255, 255, 0.04);
+  --filter-btn-text: #94a3b8;
+  --filter-btn-hover-text: #ffffff;
+  --filter-btn-hover-border: rgba(0, 166, 251, 0.4);
+  --filter-btn-hover-bg: transparent;
 }
 /* Chrome, Safari, aur Opera ke liye scrollbar hatane ka tareeqa */
 ::-webkit-scrollbar {
@@ -324,14 +332,14 @@ logo content */
     gap: 7px;
     padding: 9px 22px;
     border-radius: 50px;
-    border: 1.5px solid rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.04);
-    color: #94a3b8;
+    border: 1.5px solid var(--filter-btn-border);
+    background: var(--filter-btn-bg);
+    color: var(--filter-btn-text);
     font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
     overflow: hidden;
-    transition: color 0.3s ease, border-color 0.3s ease;
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
     letter-spacing: 0.02em;
 }
 
@@ -343,8 +351,9 @@ logo content */
 
 /* Hover on non-active buttons */
 .project-filter-btn:not([data-active="true"]):hover {
-    color: #fff;
-    border-color: rgba(0, 166, 251, 0.4);
+    color: var(--filter-btn-hover-text);
+    border-color: var(--filter-btn-hover-border);
+    background-color: var(--filter-btn-hover-bg);
 }
 
 /* Sliding gradient bubble (layoutId target) */
@@ -455,6 +464,14 @@ logo content */
    ========================================== */
 .light {
     background-color: #F8FAFC !important;
+    --contact-color: #0F172A;
+    --experience-link-hover: #0F172A;
+    --filter-btn-border: rgba(15, 23, 42, 0.15);
+    --filter-btn-bg: rgba(15, 23, 42, 0.04);
+    --filter-btn-text: #475569;
+    --filter-btn-hover-text: #00a6fb;
+    --filter-btn-hover-border: rgba(0, 166, 251, 0.6);
+    --filter-btn-hover-bg: rgba(0, 166, 251, 0.04);
 }
 
 .light body {
@@ -623,12 +640,20 @@ logo content */
 }
 
 /* Light mode overrides for specific elements */
-.light .contact-value {
-    color: #0F172A !important;
+.contact-value {
+    color: var(--contact-color) !important;
 }
 
-.light .contact-value:hover {
+.contact-value:hover {
     color: #00a6fb !important;
+}
+
+.experience-card-link {
+    color: #00a6fb !important;
+}
+
+.experience-card-link:hover {
+    color: var(--experience-link-hover) !important;
 }
 
 .light .cv-btn {

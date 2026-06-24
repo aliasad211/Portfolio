@@ -15,7 +15,7 @@ export default function Experience() {
             href="https://carencleanss.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white underline transition-colors"
+            className="experience-card-link hover:text-white underline transition-colors"
           >
             CareNClean
           </a>{" "}
@@ -24,7 +24,7 @@ export default function Experience() {
             href="https://swiss411.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white underline transition-colors"
+            className="experience-card-link hover:text-white underline transition-colors"
           >
             Swiss411
           </a>{" "}
@@ -51,7 +51,7 @@ export default function Experience() {
             href="https://checkntrust.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white underline transition-colors"
+            className="experience-card-link hover:text-white underline transition-colors"
           >
             CheckNTrust
           </a>{" "}
