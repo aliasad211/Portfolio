@@ -74,7 +74,7 @@ export default function Review() {
             viewport={{ once: true }}
             className="text-slate-400 text-sm md:text-base"
           >
-            Testimonials from clients and colleagues I've had the pleasure to work with
+            Testimonials from clients and colleagues I&apos;ve had the pleasure to work with
           </motion.p>
         </motion.div>
 

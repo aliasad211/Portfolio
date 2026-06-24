@@ -9,6 +9,7 @@ export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     const savedTheme = localStorage.getItem("theme") || "dark";
     setTheme(savedTheme);
@@ -20,15 +21,12 @@ export default function ThemeToggle() {
   }, []);
 
   const toggleTheme = () => {
-    console.log("ThemeToggle: Button clicked. Current state theme:", theme);
     if (theme === "dark") {
       document.documentElement.classList.add("light");
-      console.log("ThemeToggle: Added 'light' class. HTML classes:", document.documentElement.className);
       localStorage.setItem("theme", "light");
       setTheme("light");
     } else {
       document.documentElement.classList.remove("light");
-      console.log("ThemeToggle: Removed 'light' class. HTML classes:", document.documentElement.className);
       localStorage.setItem("theme", "dark");
       setTheme("dark");
     }

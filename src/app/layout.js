@@ -4,6 +4,7 @@ import { Playfair_Display, DM_Sans } from 'next/font/google'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LandingLoader from './components/LandingLoader';
+import ThreeBackground from './components/ThreeBackground';
 
 // const inter = Inter({ subsets: ['latin'] });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
@@ -45,13 +46,8 @@ export default function RootLayout({ children }) {
         {/* Advanced Landing Loader */}
         <LandingLoader />
 
-        {/* Animated Background Ambient Glowing Orbs */}
-        <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden min-h-full">
-          <div className="bg-glow-orb orb-blue absolute top-[5%] left-[-15%]" />
-          <div className="bg-glow-orb orb-purple absolute top-[30%] right-[-15%]" />
-          <div className="bg-glow-orb orb-blue absolute top-[60%] left-[10%]" />
-          <div className="bg-glow-orb orb-purple absolute bottom-[10%] right-[5%]" />
-        </div>
+        {/* Three.js Animated Background — fixed canvas, always visible while scrolling */}
+        <ThreeBackground />
 
         {/* Foreground Content Stack */}
         <div className="relative z-10 flex flex-col min-h-screen">

@@ -40,6 +40,7 @@ export default function Hero() {
       timer = setTimeout(() => setIsDeleting(true), 1500);
     } else if (index === 0 && isDeleting) {
       // Poora delete hone ke baad dobara shuru karna
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsDeleting(false);
     }
 
@@ -80,7 +81,7 @@ export default function Hero() {
           </motion.div>
 
        <h1 className="font-['Playfair_Display',serif] font-semibold text-[clamp(28px,7vw,50px)] leading-tight text-white whitespace-nowrap">
-      I'm a{" "}
+       I&apos;m a{" "}
       <span className="text-[#00a6fb] italic inline-block relative">
         {currentText}
         {/* Blinking Cursor Effect */}
@@ -179,7 +180,7 @@ export default function Hero() {
                 priority
                 className="my-profile-pic"
               />
-              <h3>It's Me</h3>
+              <h3>It&apos;s Me</h3>
               <h3>Ali Asad</h3>
               <a href="#contact">Hire me</a>
             </div>

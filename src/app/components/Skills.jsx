@@ -345,7 +345,7 @@ export default function TechStack() {
             </h3>
             
             <p className="text-slate-300 max-w-3xl mx-auto leading-relaxed text-sm md:text-base">
-              Technology is constantly evolving, and so am I. I'm always eager to learn new tools,
+              Technology is constantly evolving, and so am I. I&apos;m always eager to learn new tools,
               frameworks, and best practices to deliver cutting-edge solutions.
             </p>
           </div>

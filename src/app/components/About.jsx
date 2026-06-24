@@ -57,7 +57,7 @@ export default function About() {
           {/* Text Section */}
           <div className="space-y-5 text-slate-300">
             <p>
-              Hello! I'm a passionate Full Stack Developer who loves building modern,
+              Hello! I&apos;m a passionate Full Stack Developer who loves building modern,
               responsive, and user-friendly digital experiences.
             </p>
 
