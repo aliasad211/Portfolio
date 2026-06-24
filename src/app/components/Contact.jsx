@@ -116,12 +116,12 @@ export default function Contact() {
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="text-sm font-semibold text-white hover:text-[#00a6fb] transition-colors duration-200"
+                        className="contact-value text-sm font-semibold text-white hover:text-[#00a6fb] transition-colors duration-200"
                       >
                         {item.value}
                       </a>
                     ) : (
-                      <p className="text-sm font-semibold text-white">{item.value}</p>
+                      <p className="contact-value text-sm font-semibold text-white">{item.value}</p>
                     )}
                   </div>
                 </li>

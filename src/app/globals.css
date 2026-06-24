@@ -277,7 +277,6 @@ logo content */
     padding: 8px 24px;
     border-radius: 8px;
     border: 2px solid #00a6fb;
-    color: #fff;
     font-weight: 600;
     font-size: 0.95rem;
     letter-spacing: 0.04em;
@@ -440,7 +439,6 @@ logo content */
     justify-content: center;
     padding: 9px 14px;
     border: 1.5px solid #00a6fb;
-    color: #fff;
     font-weight: 600;
     font-size: 0.85rem;
     border-radius: 10px;
@@ -450,4 +448,193 @@ logo content */
 
 .project-btn-outline:hover {
     background: rgba(0, 166, 251, 0.1);
+}
+
+/* ==========================================
+   LIGHT MODE AESTHETICS OVERRIDES
+   ========================================== */
+.light {
+    background-color: #F8FAFC !important;
+}
+
+.light body {
+    background-color: #F8FAFC !important;
+    color: #334155 !important;
+}
+
+.light section {
+    background-color: #F8FAFC !important;
+}
+
+/* Typography */
+.light h1, 
+.light h2, 
+.light h3, 
+.light h4, 
+.light h5, 
+.light h6 {
+    color: #0F172A !important;
+}
+
+.light p,
+.light li,
+.light blockquote {
+    color: #334155 !important;
+}
+
+/* Secondary & Muted Texts */
+.light .text-slate-100,
+.light .text-slate-300,
+.light .text-slate-400,
+.light .text-slate-500,
+.light .text-zinc-400,
+.light .text-zinc-500 {
+    color: #475569 !important;
+}
+
+/* Form Inputs */
+.light input,
+.light textarea {
+    background-color: #FFFFFF !important;
+    border-color: #CBD5E1 !important;
+    color: #0F172A !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+    color: #94A3B8 !important;
+}
+
+/* Premium Card System (About Quick Facts, Experience, Skills, Project Cards) */
+.light .project-card,
+.light .bg-gradient-to-br.from-white\/10 {
+    background: #FFFFFF !important;
+    border-color: #E2E8F0 !important;
+    box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.05), 0 4px 6px -2px rgba(15, 23, 42, 0.02) !important;
+}
+
+.light .project-card:hover {
+    border-color: rgba(0, 166, 251, 0.4) !important;
+    box-shadow: 0 15px 25px -5px rgba(0, 166, 251, 0.1) !important;
+}
+
+/* Skill/Tech tags */
+.light .project-tech-tag,
+.light .flex.items-center.gap-3.rounded-2xl.border.border-slate-700.bg-white\/5 {
+    background-color: rgba(0, 166, 251, 0.08) !important;
+    border-color: rgba(0, 166, 251, 0.2) !important;
+    color: #00a6fb !important;
+}
+
+.light .flex.items-center.gap-3.rounded-2xl.border.border-slate-700.bg-white\/5 span {
+    color: #0F172A !important;
+}
+
+/* Header Navbar */
+.light header {
+    background-color: rgba(248, 250, 252, 0.8) !important;
+    border-color: #E2E8F0 !important;
+    backdrop-filter: blur(12px) !important;
+}
+
+/* Nav links */
+.light header nav a {
+    color: #475569 !important;
+}
+
+.light header nav a:hover {
+    color: #0F172A !important;
+}
+
+.light header nav a.text-\[\#00a6fb\] {
+    color: #00a6fb !important;
+}
+
+.light header .logocontent h1 {
+    color: #0F172A !important;
+}
+
+.light header .logocontent h1:nth-child(1) {
+    -webkit-text-stroke: 1.5px #00a6fb !important;
+    color: transparent !important;
+}
+
+.light header .logocontent h1:nth-child(2) {
+    color: #00a6fb !important;
+}
+
+/* Mobile drawer */
+.light header button {
+    color: #0F172A !important;
+}
+
+.light header .md\:hidden.absolute.top-16 {
+    background-color: #FFFFFF !important;
+    border-color: #E2E8F0 !important;
+}
+
+.light header .md\:hidden.absolute.top-16 a {
+    color: #475569 !important;
+}
+
+.light header .md\:hidden.absolute.top-16 a:hover {
+    color: #0F172A !important;
+}
+
+/* Glowing background particles */
+.light .bg-glow-orb {
+    opacity: 0.04 !important;
+}
+
+/* Testimonial Nav navigation buttons */
+.light .absolute.left-\[-18px\],
+.light .absolute.right-\[-18px\] {
+    background-color: #FFFFFF !important;
+    border-color: #E2E8F0 !important;
+    color: #0F172A !important;
+}
+
+/* Social icons on hero section */
+.light .flex.justify-center.md\:justify-start.pt-2 a,
+.light .flex.gap-3 a {
+    border-color: #CBD5E1 !important;
+    color: #475569 !important;
+}
+
+.light .flex.justify-center.md\:justify-start.pt-2 a:hover,
+.light .flex.gap-3 a:hover {
+    border-color: #00a6fb !important;
+    color: #00a6fb !important;
+}
+
+/* Footer layout styling */
+.light footer {
+    background-color: #F1F5F9 !important;
+    border-color: #E2E8F0 !important;
+    color: #475569 !important;
+}
+
+.light footer a {
+    color: #475569 !important;
+}
+
+.light footer a:hover {
+    color: #00a6fb !important;
+}
+
+/* Light mode overrides for specific elements */
+.light .contact-value {
+    color: #0F172A !important;
+}
+
+.light .contact-value:hover {
+    color: #00a6fb !important;
+}
+
+.light .cv-btn {
+    color: #00a6fb !important;
+}
+
+.light .cv-btn:hover {
+    color: #FFFFFF !important;
 }

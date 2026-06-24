@@ -203,7 +203,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="project-btn-outline whitespace-nowrap"
+                      className="project-btn-outline whitespace-nowrap text-[#00a6fb] dark:text-white border-[#00a6fb] hover:bg-[#00a6fb]/10 transition-colors duration-300"
                     >
                       <FiGithub size={15} />
                       GitHub

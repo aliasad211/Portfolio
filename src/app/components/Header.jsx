@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -104,11 +105,12 @@ export default function Header() {
           })}
         </nav>
         
-        {/* Desktop Hire Me Button */}
-        <div className="hidden md:block">
+        {/* Desktop Hire Me Button & Theme Toggle */}
+        <div className="hidden md:flex items-center gap-4">
+          <ThemeToggle />
           <Link href="#contact" className="hire-me-btn">
             <motion.span
-              className="hire-me-inner"
+              className="hire-me-inner text-[#00a6fb] dark:text-white border-[#00a6fb] hover:bg-[#00a6fb] hover:text-white transition-colors duration-300"
               animate={{
                 boxShadow: [
                   "0 0 8px 2px rgba(0,166,251,0.4)",
@@ -126,11 +128,12 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Mobile Hamburger Button */}
-        <div className="flex md:hidden items-center">
+        {/* Mobile Hamburger Button & Theme Toggle */}
+        <div className="flex md:hidden items-center gap-3">
+          <ThemeToggle />
           <button
             onClick={toggleMenu}
-            className="text-white hover:text-[#00a6fb] focus:outline-none p-2 transition-colors"
+            className="text-white hover:text-[#00a6fb] focus:outline-none p-2 transition-colors flex items-center justify-center"
             aria-label="Toggle menu"
           >
             {isOpen ? <HiX size={26} /> : <HiMenu size={26} />}
