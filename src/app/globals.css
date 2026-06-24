@@ -12,6 +12,7 @@
   --filter-btn-hover-border: rgba(0, 166, 251, 0.5);
   --filter-btn-hover-bg: rgba(0, 166, 251, 0.08);
   --about-fact-color: #cbd5e1;
+  --blinking-cursor-color: #ffffff;
 }
 /* Chrome, Safari, aur Opera ke liye scrollbar hatane ka tareeqa */
 ::-webkit-scrollbar {
@@ -474,6 +475,7 @@ logo content */
     --filter-btn-hover-border: rgba(0, 166, 251, 0.6);
     --filter-btn-hover-bg: rgba(0, 166, 251, 0.04);
     --about-fact-color: #475569;
+    --blinking-cursor-color: #0F172A;
 }
 
 .light body {
@@ -673,4 +675,8 @@ logo content */
 
 .about-fact-item:hover {
     color: #00a6fb !important;
+}
+
+.blinking-cursor {
+    background-color: var(--blinking-cursor-color) !important;
 }

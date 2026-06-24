@@ -84,7 +84,7 @@ export default function Hero() {
       <span className="text-[#00a6fb] italic inline-block relative">
         {currentText}
         {/* Blinking Cursor Effect */}
-        <span className="ml-1 inline-block w-0.75 h-[0.9em] bg-white animate-pulse absolute bottom-1"></span>
+        <span className="ml-1 inline-block w-0.75 h-[0.9em] blinking-cursor animate-pulse absolute bottom-1"></span>
       </span>
     </h1>
 
