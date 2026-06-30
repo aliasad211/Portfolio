@@ -58,7 +58,7 @@ export default function Experience() {
           )
         </span>
       ),
-      date: "jan 2025 - june 2025",
+      date: "2 years",
       location: "Onsite",
       points: [
         "Contributed directly to the core development of CheckNTrust, designing a secure and highly intuitive user verification flow",
