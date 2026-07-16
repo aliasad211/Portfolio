@@ -48,7 +48,7 @@ export default function About() {
           {/* Image Section */}
           <div className="flex justify-center">
             <img
-              src="/image.png"
+              src="/image.jpg"
               alt="Profile"
               className="w-64 h-72 md:w-80 md:h-96 max-w-full object-cover rounded-2xl shadow-lg"
             />
