@@ -11,12 +11,17 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 const dmSans   = DM_Sans({ subsets: ['latin'], variable: '--font-dm' })
 
 export const metadata = {
-  title: 'My Portfolio',
-  description: 'Welcome to my professional web development portfolio',
+  title: 'Muhammad Ali Asad | Full Stack Developer',
+  description: 'Full Stack Web & Mobile Application Developer specializing in MERN stack, Next.js, React Native.',
   icons: {
-    icon: '/image.png',
-    shortcut: '/image.png',
-    apple: '/image.png',
+    icon: '/image.jpg',
+    shortcut: '/image.jpg',
+    apple: '/image.jpg',
+  },
+  openGraph: {
+    title: 'Muhammad Ali Asad | Full Stack Developer',
+    description: 'Full Stack Web & Mobile Application Developer specializing in MERN stack, Next.js, React Native.',
+    images: [{ url: '/image.jpg' }],
   },
 };
 
